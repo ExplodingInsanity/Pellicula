@@ -1,0 +1,39 @@
+@font-face{
+ font-family:"Roboto";
+ src: url("../fonts/Roboto-Bold.tff");
+}
+@font-face{
+ font-family:"Lato";
+ src: url("../fonts/Lato-Regular.ttf");
+}
+@font-face{
+ font-family:"Merriweather";
+  src: url("../fonts/Merriweather-Bold.ttf");
+}
+
+body{
+margin: 0px;
+padding: 0px;
+}
+#title {
+margin:0px;
+margin-bottom:20px;
+font-family:'Roboto';
+font-size:100px;
+color:#ffbb00;
+}
+
+.heading{
+text-decoration: underline;
+color:#ffbb00;
+font-size:50px;
+font-family:'Merriweather';
+}
+
+.description{
+font-family:'Lato';
+color:black;
+font-size:40px;
+}
+
+
