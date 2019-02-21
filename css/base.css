@@ -10,8 +10,13 @@
  font-family:"Merriweather";
   src: url("../fonts/Merriweather-Bold.ttf");
 }
+@font-face{
+ font-family:"Alegreya";
+  src: url("../fonts/Alegreya-Italic.ttf");
+}
 
 body{
+background-color:#000000;
 margin: 0px;
 padding: 0px;
 }
@@ -20,20 +25,22 @@ margin:0px;
 margin-bottom:20px;
 font-family:'Roboto';
 font-size:100px;
-color:#ffbb00;
+color:#1ed760;
 }
 
 .heading{
 text-decoration: underline;
-color:#ffbb00;
-font-size:50px;
+color:#1ed760;//#EDF5E1;
+font-size:35px;
 font-family:'Merriweather';
 }
 
 .description{
-font-family:'Lato';
-color:black;
-font-size:40px;
+line-height:40px;
+font-family:'Alegreya';
+color:#ffffff;
+font-size:30px;
+-webkit-text-stroke-width: 0px;
+-webkit-text-stroke-color: #ffffff;
 }
-
 
