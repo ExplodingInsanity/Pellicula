@@ -1,0 +1,24 @@
+.film
+{
+	border-radius:10px 40px 40px 10px;
+	margin:10px 25px 10px 25px;
+	height:200px;
+	padding:0px;
+}
+
+.rowOdd{
+background-color:#41be6d;
+}
+.rowEven{
+background-color:#59a574;
+}
+
+#title {
+font-family:'Roboto';
+font-size:100px;
+color:#1ed760;
+}
+
+.film img{
+float:left;
+}
