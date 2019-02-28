@@ -6,8 +6,8 @@
 <body>
 <?php   include('../dbconnection.php');
 	include('../php/filme.php');?>
-<center><p id="title">Filme</p>
+<center><p id="title">Filme</p></center>
 <?php
 for($i = 1; $i <= 100; $i++) writeMovie($i,"alita.jpg","Alita: Battle Angel",2019);
 ?>
-</center></body>
+</body>

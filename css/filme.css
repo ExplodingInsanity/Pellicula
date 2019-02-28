@@ -2,8 +2,9 @@
 {
 	border-radius:10px 40px 40px 10px;
 	margin:10px 25px 10px 25px;
-	height:200px;
 	padding:0px;
+	overflow:auto;
+	position:relative;
 }
 
 .rowOdd{
@@ -20,8 +21,45 @@ color:#1ed760;
 }
 
 .titluFilm{
+text-decoration: underline;
 color:white;
+margin:0px;
+padding:0px;
 }
 .film img{
+height:25%;
 float:left;
+position:relative;
+}
+.descFilm{
+position:relative;
+padding-top:30px;
+font-family:'Merriweather';
+font-size:20px;
+}
+.detaliuFilm{
+padding:0px;
+margin:0px;
+font-size:20px;
+}
+.detalii{
+float:none;
+}
+.detalii *{
+float:left;
+padding-right:5px;
+}
+.detalii img{
+height:30px;
+}
+.detalii{
+float:none;
+}
+.actoriContainer{
+position:relative;
+width:66%;
+}
+.actoriContainer img{
+float:left;
+height:100px;
 }
