@@ -8,8 +8,15 @@
 	include('../php/filme.php');?>
 <center><p id="title">Filme</p></center>
 <?php
-$da = array('unu','doi','unu','doi');
-$da2 = array('trei','patru','trei','patru');
-for($i = 1; $i <= 10; $i++) writeMovie($i,"alita.jpg","Alita: Battle Angel",2019,$da,$da2,sizeof($da));
+$result1 = mysqli_query($connection,"Select * from filme");
+while($film = mysqli_fetch_assoc($result1)){
+	$actori = mysqli_query($connection,"Select roluri.rol,actori.nume,actori.poza from roluri join actori on actori.id = roluri.id_actor and roluri.id_film = ".$film['id']);
+	$caca = mysqli_fetch_all($actori, MYSQLI_ASSOC);
+	foreach($caca as $columns){
+	echo $columns['rol'] . ' - ' . $columns['nume'];	
+	}
+	echo '<br>';
+	writeMovie(++$i,$film['cover'],$film['titlu'],$film['an'],$film['gen'],$film['durata'],$film['descriere'],$caca);
+}
 ?>
 </body>
