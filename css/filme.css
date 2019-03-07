@@ -1,3 +1,6 @@
+body{
+background-color:#ffffff;	
+}
 .film
 {
 	border-radius:10px 40px 40px 10px;
@@ -44,6 +47,8 @@ font-size:20px;
 }
 .detalii{
 float:none;
+position: relative;
+overflow: auto;
 }
 .detalii *{
 float:left;

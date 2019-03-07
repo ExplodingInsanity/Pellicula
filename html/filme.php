@@ -8,6 +8,8 @@
 	include('../php/filme.php');?>
 <center><p id="title">Filme</p></center>
 <?php
-for($i = 1; $i <= 100; $i++) writeMovie($i,"alita.jpg","Alita: Battle Angel",2019);
+$da = array('unu','doi','unu','doi');
+$da2 = array('trei','patru','trei','patru');
+for($i = 1; $i <= 10; $i++) writeMovie($i,"alita.jpg","Alita: Battle Angel",2019,$da,$da2,sizeof($da));
 ?>
 </body>
