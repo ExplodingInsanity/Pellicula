@@ -43,4 +43,7 @@ font-size:30px;
 -webkit-text-stroke-width: 0px;
 -webkit-text-stroke-color: #ffffff;
 }
-
+a {color:rgba(0,0,0,0);}      /* unvisited link */
+a:visited {color:#000000;}  /* visited link*/
+a:hover {color:#FFFFFF;}  /* mouse over link */
+a:active {color:#0000FF;}  /* selected link */
